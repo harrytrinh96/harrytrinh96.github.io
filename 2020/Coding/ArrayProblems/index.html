@@ -1,0 +1,1859 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Harry Trinh">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="\they run to me if they have some issues.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#f7766c">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono%7CKarma%7CMina&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45299226-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-45299226-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu2b32c4ab415f12f472f73c7b0301b0d1_19400_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu2b32c4ab415f12f472f73c7b0301b0d1_19400_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/2020/Coding/ArrayProblems/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@phuccoi996">
+  <meta property="twitter:creator" content="@phuccoi996">
+  
+  <meta property="og:site_name" content="Harry Trinh">
+
+  <meta property="og:url" content="/2020/Coding/ArrayProblems/">
+  <meta property="og:title" content="AlgoExpert - Arrays Problems | TrinhDinhPhuc">
+  <meta property="og:description" content="AlgoExpert - Arrays Problems "><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-10-06T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-10-06T11:38:40-04:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Solving Arrays Problems - AlgoExpert | TrinhDinhPhuc</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Harry Trinh</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Harry Trinh</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks_favorite"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#cv"><span>Résumé</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+   
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Solving Arrays Problems - AlgoExpert </h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Tue, Oct 06, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    10 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/2020/Coding/ArrayProblems/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/coding/">Coding</a></span>
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+ 
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p><div class="alert alert-note">
+  <div>
+    15 questions about Arrays.
+  </div>
+</div>
+</p>
+
+<h3>1. Two Number Sum</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day1-TwoNumberSum/question.png" width="800"></p>
+<p>Write a function that takes in a non-empty array of distinct integers and an integer representing a target sum. If any two numbers in the input array sum up to the target sum, the function should return them in an array, in any order. If no two numbers sum up to the target sum, the function should return an empty array.</p>
+<h5>Scala</h5>
+<pre class="Scala"><code>
+  import java.util.Arrays;
+
+  object SumTwoNumbers {
+    def main(args: Array[String]): Unit = {
+      val input_array =  Array( -21, 301, 12, 4, 65, 56, 210, 356, 9, -47)
+      println(twoNumberSum1(input_array,163).toList)
+      println(twoNumberSum2(input_array,163).toList)
+  
+    }
+  
+    def twoNumberSum1(array:Array[Int], targetSum:Int) : Array[Int]= {
+      var i =0;
+        for ( i <- 0 to array.length){
+        var firstNum = array(i);
+        var secondNum = targetSum -firstNum
+        if (array contains(secondNum)) {
+          return Array(firstNum, secondNum)
+        }
+      }
+      return Array()
+    }
+  // Time complexity O(nlogn) | Space complexity O(1)
+    def twoNumberSum2(array: Array[Int], targetSum: Int ): Array[Int] = {
+      Arrays.sort(array);
+      var left = 0;
+      var right = array.length -1;
+      while (left < right){
+        var currentSum = array(left) + array(right);
+        if (currentSum == targetSum){
+          return Array(array(left), array(right));
+        }
+        else if (currentSum < targetSum){
+          left+=1;
+        }
+        else if (currentSum > targetSum){
+          right-=1;
+        }
+      }
+      return Array()
+    }
+  }
+  
+  
+  // output: [-47,210]
+</code></pre>
+<h5>Python</h5>
+<pre class="Python"><code>
+  # # O(n^2) time | O(1) space
+  -----------------------Solution 1 -----------------------------------------
+  def twoNumberSum(array, targetSum):
+      # Write your code here.
+    for i in range(0,len(array)):
+      for j in range(1,len(array)):
+        if (array[i] + array[j] == targetSum ) and (i != j):
+          return [array[i] , array[j] ]
+    return []
+  
+  
+  # # O(n^2) time | O(1) space
+  ---------------------------Solution 2-------------------------------------
+  def twoNumberSum(array, targetSum):
+      # Write your code here.
+    for i in range(0,len(array)-1):
+      for j in range(i+1,len(array)):
+        if (array[i] + array[j] == targetSum ) and (i != j):
+          return [array[i] , array[j] ]
+    return []
+  
+  
+  
+  # # O(n) time | O(n) space
+  ---------------------------Solution 3-------------------------------------
+  def twoNumberSum(array, targetSum):
+      # Write your code here.
+    for i in range(0,len(array)):
+      firstNumber = array[i]
+      secondNumber = targetSum - firstNumber
+      if secondNumber in array[i+1:]:
+        return sorted([firstNumber, secondNumber])
+    return []
+  
+  
+  # # O(nlogn) time | O(1) space
+  ---------------------------Solution 4-------------------------------------
+  def twoNumberSum(array, targetSum):
+      # Write your code here.
+    array.sort()
+    left  = 0 
+    right = len(array) -1
+    while left < right:
+      currentSum = array[left] + array[right]
+      if currentSum == targetSum:
+        return [array[left] , array[right]]
+      elif currentSum < targetSum:
+        left+=1
+      elif currentSum > targetSum:
+        right-=1
+    return []
+</code></pre>
+
+<h5>Java</h5>
+<pre class="Java"><code>
+  // # O(nlogn) time | O(1) space
+  ////---------------------------Solution-------------------------------------
+  import java.util.*;
+  
+  class Main {
+  
+    public static void main(String[] args) {
+  
+      int[] input_array =  new int[]{ -21, 301, 12, 4, 65, 56, 210, 356, 9, -47};
+      System.out.println(Arrays.toString(twoNumberSum(input_array, 163)));
+  
+    }
+  
+    public static int[] twoNumberSum(int[] array, int targetSum) {
+      // Write your code here.
+      Arrays.sort(array);
+      int left;
+      left = 0;
+      int right ;
+      right = array.length -1 ;
+      while (left < right ) {
+        int currentSum ;
+        currentSum = array[left] + array[right];
+        if ( currentSum == targetSum){
+          return  new int[] {array[left] , array[right]};
+        }
+  
+        else if ( currentSum < targetSum){
+        left+=1;
+        }
+  
+        else if ( currentSum > targetSum){
+        right-=1;
+        }
+      }
+      return new int[] {};
+    }
+  }
+  
+   output: [-47, 210]
+</code></pre>
+
+<h3>2. Validate Subsequence</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day2-ValidateSubsequence/question.png" width="800"></p>
+<p>Given two non-empty arrays of integers, write a function that determines whether the second array is a subsequence of the first one. </p>
+<p>  A subsequence of an array is a set of numbers that aren't necessarily adjacent in the array but that are in the same order as they appear in the array. 
+  For instance, the number [1, 3, 4] from a subsequence of the array [1, 2, 3, 4], and so do the numbers [2, 4]. Note that a single number in an array itself are both valid 
+  subsequence of the array.</p>
+<p>For this problem, we have 2 approaches:
+  <li><strong>O(n^2) time | O(1) </strong>space using a <code>for</code> loop</li>
+  <li><strong>O(n^2) time | O(1) </strong>space using a <code>while</code> loop</li></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+  # Time: O(n) | Space: O(1)
+  def isValidSubsequence(array, sequence):
+      # Write your code here.
+    idx=0
+    seq_length = len(sequence)
+    for element in array:
+      if element == sequence[idx]:
+        idx+=1
+      if idx == seq_length:
+        return True
+    return False
+  
+  # Time: O(n) | Space: O(1)
+  def isValidSubsequence(array, sequence):
+      seqIdx = 0
+      for value in array:
+          if seqIdx == len(sequence):
+              return True
+          if sequence[seqIdx] == value:
+              seqIdx += 1
+  
+      return seqIdx == len(sequence)
+  
+  # Time: O(n) | Space: O(1)
+  def isValidSubsequence(array, sequence):
+      seqIdx = 0
+      arrIdx = 0
+      while arrIdx < len(array) and seqIdx < len(sequence):
+          if array[arrIdx] == sequence[seqIdx]:
+              seqIdx += 1
+          arrIdx += 1
+      return seqIdx == len(sequence)		
+  
+  #{
+  #  "array": [5, 1, 22, 25, 6, -1, 8, 10],
+  #  "sequence": [5, 1, 22, 22, 25, 6, -1, 8, 10]
+  #}
+  # result: Flase
+  print(isValidSubsequence(array,sequence))
+</code></pre>
+
+<h3>3. Three Number Sum </h3>
+<p><img src="../100DaysCoding-Algoexpert/Day3-ThreeNumberSum/question.png" width="800"></p>
+<p> For this problem, there are 2 solutions:
+<li><strong>O(n^3) time | O(n) space </strong>using 3 <code>for</code> loops</li>
+<li><strong>O(n^2) time | O(n) space </strong>using 2 pointers <code>left</code> and <code>right</code> with <code>while</code> loop inside a <code>for</code> loop</li></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+# O(n^3) time | O(n) space
+
+def threeNumberSum(array, targetSum):
+	array.sort()
+    # Write your code here.
+	output = []
+	for i in range(0,len(array)-2):
+		for j in range(i+1,len(array)-1):
+			for k in range(j+1,len(array)):
+				if ((array[i] + array[j] + array[k]) == targetSum)  :
+					output.append([array[i], array[j], array[k]])
+	return output
+
+# O(n^2) time | O(n) space
+
+def threeNumberSum(array, targetSum):
+    # Write your code here.
+    array.sort()  # nlogn
+    print(array)
+    results = []
+    for current in range(len(array)):
+        left = current + 1
+        right = len(array) - 1
+        while left < right:
+            print( array[current], array[left], array[right])
+            result = array[current] + array[left] + array[right]
+            if result == targetSum:
+                results.append([array[current], array[left], array[right]])
+                left += 1
+                right -= 1
+            elif result < targetSum:
+                left += 1
+            else:
+                right -= 1
+    return results
+print(threeNumberSum([12, 3, 1, 2, -6, 5, -8, 6],0 ))
+
+#[[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
+</code></pre>
+
+<h3>4. Smallest Difference</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day4-SmallestDiffence/question.png" width="800"></p>
+<p> For this problem, we have 2 solutions:
+  <li><strong>O(n^2) time | O(1) space</strong> using 2 <code>for</code> loops</li>
+  <li><strong>(nlog(n) + mlog(m)) time | O(n) space </strong> using 2 pointers inside a <code>while</code> loop</li></p>
+  <h5>Python</h5>
+  <pre class="Python"><code>
+    # O(n^2) time | O(1) space
+    def smallestDifference(arrayOne, arrayTwo):  
+        # Write your code here.
+      smallest_pair= [None,None]
+      smallest_value = None
+      for arrOneIdx in  range(0,len(arrayOne),1):
+        for arrTwoIdx in range(0,len(arrayTwo),1):
+          abs_diff = abs(arrayOne[arrOneIdx] - arrayTwo[arrTwoIdx])
+          if arrOneIdx == 0 and arrTwoIdx == 0:
+            smallest_value = abs_diff
+            continue
+          if  abs_diff < smallest_value:
+            smallest_value = abs_diff 
+            smallest_pair[0] = arrayOne[arrOneIdx]
+            smallest_pair[1] = arrayTwo[arrTwoIdx]
+      return smallest_pair
+    
+    # O(n^2) time | O(1) space 
+    # float('inf'), float('-inf')
+     def smallestDifference(arrayOne, arrayTwo):  
+        # Write your code here.
+        smallest = [float('inf'), float('-inf')]
+        for one in arrayOne:
+            for two in arrayTwo:
+                if abs(smallest[0] - smallest[1]) > abs(one - two):
+                    smallest = [one, two]
+        return smallest
+    
+    
+    # O(nlog(n) + mlog(m)) time (because the length of the two arrays are different)
+    # O(1) space 
+    def smallestDifference(arrayOne, arrayTwo):
+      arrayOne, arrayTwo = sorted(arrayOne), sorted(arrayTwo)
+        smallest=[float("inf"), float("-inf")]
+      arrOneIdx, arrTwoIdx  = 0 , 0
+      while ((arrOneIdx < len(arrayOne)) and  (arrTwoIdx < len(arrayTwo))):
+        if abs(smallest[0]-smallest[1]) > abs(arrayOne[arrOneIdx] - arrayTwo[arrTwoIdx]):
+          smallest[0] = arrayOne[arrOneIdx]
+          smallest[1] = arrayTwo[arrTwoIdx]
+        if arrayOne[arrOneIdx] < arrayTwo[arrTwoIdx]:
+          arrOneIdx += 1
+        elif arrayOne[arrOneIdx] > arrayTwo[arrTwoIdx]:
+          arrTwoIdx += 1
+        else:
+          break
+      return smallest
+    
+#{
+#  "arrayOne": [10, 1000],
+#  "arrayTwo": [-1441, -124, -25, 1014, 1500, 660, 410, 245, 530]
+#}
+
+# [1000, 1014]
+  </code></pre>
+<h3>5. Move Element To End</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day5-MoveElementToEnd/question.png" width="800"></p>
+
+<h5>Python</h5>
+<pre class="Python"><code>
+# O(n^2) time | O(1) space
+def moveElementToEnd(array, toMove):
+    # Write your code here.
+	final_Array = []
+	count=0
+	for element in array:
+		if element == toMove:
+			count+=1
+		else:
+			final_Array.append(element)
+	for i in range(0,count):
+		final_Array.append(toMove)
+	return final_Array
+# O(n) time | O(1) space			
+# --------------------------------------------------------
+def moveElementToEnd(array, toMove):
+    left, right = 0, len(array) - 1
+	while left < right:
+		if array[right] == toMove:
+			right -= 1
+		if array[left] != toMove:
+			left += 1
+		if array[left] == toMove and array[right] != toMove:
+			array[left], array[right] = array[right], array[left]
+	return array
+
+
+# O(n) time | O(1) space			
+# --------------------------------------------------------
+def moveElementToEnd(array, toMove):
+    # Write your code here
+	left, right = 0, len(array) -1
+	while left < right:
+		while (left < right) and (array[right] == toMove):
+			right -= 1
+		if array[left] == toMove:
+			temp = array[left]
+			array[left] = array[right]
+			array[right] = temp
+		left +=1
+  return array
+</code></pre>
+<h3>6. Monotonic Array</h3>
+<p>**A monotonic array is an array that is either non-decreasing or non-increasing**</p>
+<p><img src="../100DaysCoding-Algoexpert/Day6-MonotonicArray/question.png" width="800"></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+  # 0(n) time | O(1) space
+  def isMonotonic(array):
+      # Write your code here.
+    isNonDecreasing = True
+    isNonIncreasing = True
+      for i in range(0, len(array)-1):
+      if array[i] < array[i+1]:
+        isNonDecreasing = False
+      if array[i] > array[i+1]:
+        isNonIncreasing = False
+    return isNonIncreasing or isNonDecreasing
+  # return True or False -> kq la True
+  
+  
+  # 0(n) time | O(1) space
+  def isMonotonic(array):
+      # Write your code here
+    if len(array) <=2:
+      return True
+    for i in range(1, len(array)-1):
+      prev_element = array[i-1]
+      curr_element = array[i]
+      next_element = array[i+1]
+      if prev_element <= curr_element <= next_element or prev_element >= curr_element >= next_element:
+        continue
+      else:
+        return False
+    return True
+  
+  
+  # isMonotonic[-1, -5, -10, -1100, -1101, -1102, -9001]
+  # result= True
+</code></pre>
+
+<h3>7. Spiral Traverse</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day7-SpiralTraversel/question.png" width="800"></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+  ## O(N) time complexity | O(N) space complexity
+  def spiralTraverse(array): 
+      result = []
+      startingRow, startingColumn, endingRow, endingColumn = 0, 0, len(array)-1, len(array[0])-1
+  
+      while startingRow <=  endingRow and startingColumn <= endingColumn:
+          for i in range(startingColumn,endingColumn+1):
+              result.append(array[startingRow][i])
+  
+          for i in range(startingRow+1,endingRow+1):
+              result.append(array[i][endingColumn])
+  
+          for i in range(endingColumn-1,startingColumn-1,-1):
+              if startingRow == endingRow:
+                  break
+              result.append(array[endingRow][i])
+  
+          for i in range(endingRow-1, startingRow,-1):
+              if startingColumn == endingColumn:
+                  break
+              result.append(array[i][startingColumn])
+  
+          startingRow+=1
+          startingColumn+=1
+          endingRow-=1
+          endingColumn-=1
+  
+      return result
+  
+  print(spiralTraverse([
+    [7]]))
+  
+  print(spiralTraverse([
+    [1, 2, 3, 4],
+    [12, 13, 14, 5],
+    [11, 16, 15, 6],
+    [10, 9, 8, 7]]))
+</code></pre>
+
+<h3>8. Longest Peak</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day8-LongestPeak/question.png" width="800"></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+  ## O(2n) or O(3n) time because we may visit a number twice or third,
+  ## but we can simplify to O(n) time | O(1) space 
+  
+  def longestPeak(array):
+    longestLength  = 0
+    idx = 1
+    while idx < len(array) -1 :
+      isPeak = array[idx-1] < array[idx] and  array[idx] > array[idx+1] 
+      if isPeak == False:
+        idx+=1
+        continue
+      leftIdx = idx-2
+      rightIdx = idx +2
+      while leftIdx >= 0 and  array[leftIdx] < array[leftIdx+1]:
+        leftIdx-= 1
+      while  rightIdx < len(array) and array[rightIdx] < array[rightIdx-1] :
+        rightIdx += 1
+      currLenth = rightIdx - leftIdx -1
+      longestLength = max(longestLength, currLenth)
+      
+      idx = rightIdx
+    return longestLength 
+  
+  # {"array": [1, 2, 3, 3, 4, 0, 10]}
+  # result = 3
+  # {"array": [1, 2, 3, 2, 1, 1]}
+  # result = 5
+</code></pre>
+
+<h3>9. Array of Product</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day9-ArrayOfProduct/question.png" width="800"></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+## -------------------------------
+## O(n^2) time | O(n) space
+def arrayOfProducts(array):
+    # Write your code here.
+  result = []
+    for i in range(len(array)):
+    runningProduct = 1
+    for j in range(len(array)):
+      if j != i:
+        runningProduct *= array[j]
+    result.append(runningProduct)
+  return result
+## -------------------------------
+## O(n) time | O(n) space
+def arrayOfProducts(array):
+  product = [1 for _ in range(len(array))]
+
+  leftRunningProduct = 1
+  for i in range(len(array)):
+    product[i] = leftRunningProduct
+    leftRunningProduct *= array[i]
+
+
+  print(product)
+  rightRunningProduct =1
+  print(leftRunningProduct)
+  for i in reversed(range(len(array))):
+    product[i] *= rightRunningProduct
+    rightRunningProduct *= array[i]
+
+  print(leftRunningProduct)
+  print(product)
+  print(rightRunningProduct)
+arrayOfProducts([5, 1, 4, 2])
+
+##-------------------------------
+## O(n) time | O(n) space
+def arrayOfProducts(array):
+    # Write your code here.
+  result = []
+  for idx in range(0,len(array),1):
+    runningProduct = 1
+    leftidx = idx-1
+    rightidx = idx +1
+    while leftidx >= 0:
+      runningProduct *= array[leftidx]
+      leftidx -= 1
+    while rightidx <= (len(array) -1) :
+      runningProduct *= array[rightidx]
+      rightidx += 1
+    result.append(runningProduct)
+  return result
+      
+# {"array": [5, 1, 4, 2]}
+# [8, 40, 10, 20]
+  
+  
+</code></pre>
+
+
+<h3>10. Find first duplicate value with constraint</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day12-FindFirstDuplicateValue/question.png" width="800"></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+# O(n) time | O(n) space
+# using Dictionary to store
+def firstDuplicateValue(array):
+    # Write your code here.
+  eleDict = {}
+    for i in array:
+    if i not in eleDict:
+      eleDict[i] = 1
+    else:
+      return i
+  return -1
+
+# O(n) time | O(n) space
+# using Set to store
+def firstDuplicateValue(array):
+    # Write your code here.
+  seen = set()
+    for i in array:
+    if i not in seen:
+      seen.add(i)
+    else:
+      return i
+  return -1
+
+# O(N) time | O(1) space
+def firstDuplicateValue(array):
+    # Write your code here.
+  for value in array:
+    if array[abs(value)-1] < 0:
+      return abs(value)
+    array[abs(value) -1] *= -1 
+    return -1
+
+print(firstDuplicateValue([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10]))
+print(firstDuplicateValue([2, 1, 1]))
+</code></pre>
+
+
+<h3>11. Four Number Sum</h3>
+<p><img src="../100DaysCoding-Algoexpert/Day10-FourNumberSum/question.png" width="800"></p>
+<h5>Python</h5>
+<pre class="Python"><code>
+
+</code></pre>
+</div>
+</div>
+    
+
+
+
+
+
+<div class="article-tags">
+  
+<!--   <a class="badge badge-light" href="/tags/git/">Git</a>
+  
+  <a class="badge badge-light" href="/tags/github/">github</a> -->
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/2020/Coding/ArrayProblems/&amp;text=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/2020/Coding/ArrayProblems/&amp;t=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub&amp;body=/2020/Coding/ArrayProblems/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/2020/Coding/ArrayProblems/&amp;title=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/profile.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Harry Trinh</a></h5>
+      <h6 class="card-subtitle">Data Scientist</h6>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+          <a href="mailto:phuccoi996@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="http://thebigdatascientists.com/" target="_blank" rel="noopener">
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="https://scholar.google.com/citations?user=0kVHSxoAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="https://github.com/TrinhDinhPhuc" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="https://orcid.org/0000-0003-0076-1881" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/phuccoi96/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://publons.com/researcher/3835669/phuc-trinh-dinh/" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    <li>
+      <a href="https://www.facebook.com/harrytrinh996" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+    
+    
+      
+    
+    <li>
+      <a href="http://thebigdatascientists.com/cv/official_cv.pdf" target="_blank" rel="noopener">
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-thebigdatascientists-com" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      <li><a href="/2020/Coding/Linked-ListProblems"  >Solving Linked List Questions | Algoexpert</a></li>
+      <li><a href="/2020/04/Pandas-Notes">Just Pandas Things From HuyenChip.com</a></li>
+      <li> <a href="/2020/03/18/training_multiple_cores_with_R">R Programming - Training Ensemble Models with Full CPU Cores</a></li>
+      <li><a href="/2020/04/ApacheAirflow/">Easy Apache Airflow Installation</a></li>
+      <li> <a href="/2020/Coding/ArrayProblems/">Solving Arrays Problems - AlgoExpert</a></li>    </ul>
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/bash.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/stata.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-thebigdatascientists-com.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  
+  <p class="powered-by">
+      
+      
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef23e545d41b87c"></script>
+      
+      
+
+      <script type="text/javascript">
+      var addthis_config = {
+        data_ga_property: 'UA-45299226-1',
+        data_ga_social : true,
+        data_track_addressbar: true,
+        data_track_addressbar_paths: ['/201*/*/*/*/*']
+      };
+      var addthis_share = {
+        
+        url_transforms : {
+          shorten: {
+            twitter: 'bitly'
+          }
+        }, 
+        shorteners : {
+          bitly : {}
+        }
+      }
+      </script>
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+  </div>
+
+  <p class="powered-by">
+    © 2018-2021 Harry Trinh. All thoughts and opinions here are my own.  Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+  </div>
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

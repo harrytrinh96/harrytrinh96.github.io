@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Harry Trinh">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="\they run to me if they have some issues.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#f7766c">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/monokai.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono%7CKarma%7CMina&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45299226-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-45299226-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu2b32c4ab415f12f472f73c7b0301b0d1_19400_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu2b32c4ab415f12f472f73c7b0301b0d1_19400_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/2020/Coding/ArrayProblems/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@phuccoi996">
+  <meta property="twitter:creator" content="@phuccoi996">
+  
+  <meta property="og:site_name" content="Harry Trinh">
+
+  <meta property="og:url" content="/2020/Coding/ArrayProblems/">
+  <meta property="og:title" content="AlgoExpert - Arrays Problems | TrinhDinhPhuc">
+  <meta property="og:description" content="AlgoExpert - Arrays Problems "><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
+  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-10-06T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-10-06T11:38:40-04:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Training Ensemble Models with Full CPU Cores</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Harry Trinh</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Harry Trinh</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks_favorite"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#blog"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#cv"><span>Résumé</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+   
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Training Ensemble Models with Full CPU Cores </h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Sun, Oct 18, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/2020/Coding/ArrayProblems/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/coding/">Coding</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+
+
+<p><div class="alert alert-note">
+  <div>
+    The <a href="https://cran.r-project.org/web/packages/randomForest/randomForest.pdf">‘randomForest’</a> Package does not support training with multiple cores. What should I do? 
+  </div>
+</div>
+</p>
+<p><strong>R</strong> supports parallel computations with the core <core>parallel</core> package. What the <code>doParallel</code> package does is provide a backend while utilizing the core parallel package. The caret package is used for developing and testing machine learning models in R. This package as well as others like <code>plyr</code> support multicore CPU speedups if a parallel backend is registered before the supported instructions are called.
+</p>
+Before showing you how to train with multiple cores. Here are ensemble models code that I used:
+<pre class="R"><code>
+setwd("~/Boruta-RFE-R-main/Final model")
+
+# Load data 
+v3data.train <- read.csv("full_train_setcsv.csv")
+v3data.test <-  read.csv("full_test_setcsv.csv")
+
+# Load caret package
+library(caret)
+names(getModelInfo()) # Check model name in caret 
+
+# Model training 
+set.seed(1234)
+fitControl <- trainControl(
+  method = "repeatedcv",
+  number = 10,
+  repeats = 2, allowParallel = TRUE)
+
+
+## Parallel Training
+library(doParallel)
+cluster <- makeCluster(detectCores(logical = TRUE)) # leave one CPU spare...
+registerDoParallel(cluster)
+clusterEvalQ(cluster, {
+  library(caret)
+})
+
+
+# Linear Regression 
+set.seed(1234)
+model_LR<-train(new_cases ~ . ,data=v3data.train, method='lm', trControl=fitControl,tuneLength=10)
+print(model_LR)
+plot(model_LR)
+saveRDS(model_rf, "linear_reg_model.rds")
+
+
+
+# CART Decision Tree
+set.seed(1234)
+model_CART<-train(new_cases ~ . ,data=v3data.train, method='rpart2', trControl=fitControl,tuneLength=10)
+print(model_CART)
+plot(model_CART)
+rfImp_CART <- varImp(model_CART) 
+plot(rfImp_CART, top = 53)
+saveRDS(model_rf, "CART_model.rds")
+
+
+
+# M5 Model tree
+set.seed(1234)
+model_M5<-train(new_cases ~ . ,data=v3data.train, method='M5', trControl=fitControl,tuneLength=10)
+print(model_M5)
+plot(model_M5)
+rfImp_M5 <- varImp(model_M5) 
+plot(rfImp_M5, top = 53)
+saveRDS(model_rf, "M5_model.rds")
+
+
+
+# Neural Network
+set.seed(1234)
+model_NN<-train(new_cases ~ .,data=v3data.train, method='neuralnet', trControl=fitControl,tuneLength=10)
+print(model_NN)
+plot(model_NN)
+rfImp_NN <- varImp(model_NN) 
+plot(rfImp_NN, top = 53)
+
+# Random Forest
+set.seed(1234)
+model_rf<-train(new_cases ~ . ,data=v3data.train, method='rf', trControl=fitControl,tuneLength=10, importance = T)
+print(model_rf)
+plot(model_rf)
+rfImp_rf <- varImp(model_rf) 
+plot(rfImp_rf, top = 53)
+
+
+# Gradient Boosted Tree model
+set.seed(1234)
+model_gbm<-train(new_cases ~ . ,data=v3data.train, method='gbm', trControl=fitControl,tuneLength=10, importance = T)
+print(model_gbm)
+plot(model_gbm)
+rfImp_gbm <- varImp(model_gbm) 
+plot(rfImp_gbm, top = 53)
+saveRDS(model_rf, "GBT_model.rds")
+
+
+### Stacking model
+# collect resamples
+results <- resamples(list(CART=model_CART, 
+                          RF=model_rf, 
+                          LR=model_LR))
+
+
+# summarize differences between modes
+summary(results)
+
+# box and whisker plots to compare models
+scales <- list(x=list(relation="free"), y=list(relation="free"))
+bwplot(results, scales=scales)
+
+
+# dot plots of accuracy
+scales <- list(x=list(relation="free"), y=list(relation="free"))
+p <- dotplot(results, scales=scales)
+stripchart(results, vertical=TRUE, add=TRUE, method="stack", col='red', pch="*")
+p + stat_summary(fun.data="mean_sdl", fun.args = list(mult=1), 
+                 geom="crossbar", width=0.5)
+summary(p)
+
+
+### Plotting Varianle Importance each model 
+plot(varImp(object=model_gbm),top = 11, main="GBM - Variable Importance")
+plot(varImp(object=model_rf),top = 50,main="RF - Variable Importance")
+plot(varImp(object=model_NN),top = 11, main="neuralnet - Variable Importance")
+plot(varImp(object=model_M5),top = 11, main="M5 - Variable Importance")
+plot(varImp(object=model_CART),top = 11,main="CART (Boruta) - Variable Importance")
+
+names(v3data.test)
+### Predictions in test data (If model_RF has highest accuracy)
+
+v3data.train$Predicted_new_cases <-predict.train(object=model_rf,v3data.train)
+
+v3data.test$Predicted_new_cases <-predict.train(object=model_rf,v3data.test)
+
+
+### Save Trained Model
+saveRDS(model_rf, "model.rds")
+model_rf <- readRDS("full_var_model.rds")
+
+### Error measurement
+
+library("Metrics")
+
+# Training error
+
+mse(v3data.train$Predicted_new_cases , v3data.train$new_cases)
+rmse(v3data.train$Predicted_new_cases , v3data.train$new_cases)
+postResample(pred= v3data.train$Predicted_new_cases ,obs =v3data.train$new_cases)
+cor(v3data.train$Predicted_new_cases , v3data.train$new_cases)  
+
+# Testing error
+mse(v3data.test$Predicted_new_cases , v3data.test$new_cases)
+rmse(v3data.test$Predicted_new_cases , v3data.test$new_cases)
+postResample(pred= v3data.test$Predicted_new_cases ,obs =v3data.test$new_cases)
+cor(v3data.test$Predicted_new_cases , v3data.test$new_cases)  
+
+
+# Export data
+
+write.csv(v3data.train, ".....csv", row.names = FALSE)
+
+write.csv(v3data.test, "......csv", row.names = FALSE)
+
+
+
+
+# H-staistic
+library(dplyr)     # basic data transformation
+library(iml)       # ML interprtation
+library(h2o)       # machine learning modeling
+library(stats)
+library(randomForest)
+# 1. create a data frame with just the features
+features <- as.data.frame(v3data.train) %>% select(-new_cases)
+
+# 2. Create a vector with the actual responses
+response <- as.numeric(as.vector(v3data.train$new_cases))
+
+
+# initialize h2o session
+h2o.no_progress()
+h2o.init()
+
+
+## Parallel Training
+library(doParallel)
+cluster <- makeCluster(detectCores(logical = TRUE)) # leave one CPU spare...
+registerDoParallel(cluster)
+clusterEvalQ(cluster, {
+  library(iml)
+})
+# 3. Create custom predict function that returns the predicted values as a
+#    vector (probability of purchasing in our example)
+pred <- function(model, newdata)  {
+  results <- as.data.frame(h2o.predict(model, as.h2o(newdata)))
+  return(results[[3L]])
+}
+
+# example of prediction output
+pred(model_rf, features) %>% head()
+
+predictor.rf <- Predictor$new(
+  model = model_rf, 
+  data = features, 
+  y = response, 
+  predict.fun = pred,
+  class = "classification"
+)
+
+interact.rf  <- Interaction$new(predictor.rf) %>% plot() + ggtitle("RF")
+
+interact.rf
+
+## Parallel
+library("future")
+library("future.callr")
+plan("callr", workers = 6)
+
+
+## Parallel Training
+library(doParallel)
+cluster <- makeCluster(detectCores(logical = TRUE)) # leave one CPU spare...
+registerDoParallel(cluster)
+clusterEvalQ(cluster, {
+  library(future.callr)
+})
+
+## Two way Interaction
+names(v3data.test)
+two_way_interact.rf  <- Interaction$new(predictor.rf, feature = "c7_2_action") %>% plot() 
+
+
+----------------------------------------------------------
+## Parallel Training
+library(doParallel)
+cluster <- makeCluster(detectCores(logical = TRUE)) # leave one CPU spare...
+registerDoParallel(cluster)
+clusterEvalQ(cluster, {
+  library(pdp)
+})
+
+
+library(pdp)
+## Compute pdp for single variable 
+pd_1st_order <- partial(model_rf, pred.var = c("c7_2_action"), rug = TRUE, plot = TRUE)
+
+pd_1st_order
+
+## Compute contour pdp for 2 variables 
+pd <- partial(model_rf, pred.var = c("c7_1_action", "c7_2_action"), chull = FALSE, contour = TRUE)
+# Add contour lines and use a different color palette
+rwb <- colorRampPalette(c("blue", "white", "red" ))
+pdp_2nd_order <- plotPartial(pd, contour = TRUE, col.regions = rwb)
+
+pdp_2nd_order
+
+
+</code></pre>
+
+The train instruction of the caret package has built-in support for parallel backends, but you have to call and set it up. If you don’t register a backend, train will resort to single-core computations. With a registered parallel backend, any <code>caret</code> model training will use multi-cores of the CPU, since by default the <code>trainControl</code> argument is already set as <code>allowParallel=TRUE</code>.
+
+You can also parallelize other instructions that don’t support it by default, but you have to add additional code. For example, you can parallel process in loops using the foreach instruction after registering a parallel backend. In our case for caret, we don’t have to. Whether you have a <code>Windows</code> or <code>Unix-based (MacOS, Linux)</code> machine, you can download the doParallel package (other similar packages are OS-dependent). Add the following lines in your program and leave everything else the same:
+<pre class="R"><code>
+# load doParallel package
+library(doParallel)
+#automatically detect all cores and register
+cluster <- makeCluster(detectCores(logical = TRUE)) # leave one CPU spare...
+registerDoParallel(cluster)
+clusterEvalQ(cluster, {
+  library(caret)
+})
+## ** you can apply this to other libraries
+
+# machine learning code goes in here
+# for example
+set.seed(1234)
+model_rf<-train(new_cases ~ . ,data=v3data.train, method='rf', trControl=fitControl,tuneLength=10, importance = T)
+print(model_rf)
+plot(model_rf)
+rfImp_rf <- varImp(model_rf) 
+plot(rfImp_rf, top = 53)
+
+# stop cluster
+stopCluster(cl)
+</code></pre>
+<p>Lets check CPU status:
+<img src="cpu_check.png"></p>
+
+<p>Yay! we did it!</p>
+
+</div>
+</div>
+
+
+
+
+
+<div class="article-tags">
+  
+<!--   <a class="badge badge-light" href="/tags/git/">Git</a>
+  
+  <a class="badge badge-light" href="/tags/github/">github</a> -->
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/2020/Coding/ArrayProblems/&amp;text=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/2020/Coding/ArrayProblems/&amp;t=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub&amp;body=/2020/Coding/ArrayProblems/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/2020/Coding/ArrayProblems/&amp;title=You%20just%20committed%20a%20large%20file%20and%20can&amp;#39;t%20push%20to%20GitHub" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/admin/profile.jpg" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="/">Harry Trinh</a></h5>
+      <h6 class="card-subtitle">Data Scientist</h6>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+          <a href="mailto:phuccoi996@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="http://thebigdatascientists.com/" target="_blank" rel="noopener">
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="https://scholar.google.com/citations?user=0kVHSxoAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="https://github.com/TrinhDinhPhuc" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+          <a href="https://orcid.org/0000-0003-0076-1881" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/phuccoi96/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://publons.com/researcher/3835669/phuc-trinh-dinh/" target="_blank" rel="noopener">
+        <i class="ai ai-publons"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    <li>
+      <a href="https://www.facebook.com/harrytrinh996" target="_blank" rel="noopener">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </li>
+    
+    
+      
+    
+    <li>
+      <a href="http://thebigdatascientists.com/cv/official_cv.pdf" target="_blank" rel="noopener">
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "https-thebigdatascientists-com" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      <li><a href="/2020/Coding/Linked-ListProblems"  >Solving Doubly Linked List Questions | Algoexpert</a></li>
+      <li><a href="/2020/04/Pandas-Notes">Just Pandas Things From HuyenChip.com</a></li>
+      <li> <a href="/2020/03/18/training_multiple_cores_with_R">R Programming - Training Ensemble Models with Full CPU Cores</a></li>
+      <li><a href="/2020/04/ApacheAirflow/">Easy Apache Airflow Installation</a></li>
+      <li> <a href="/2020/Coding/ArrayProblems/">Solving Arrays Problems - AlgoExpert</a></li>    </ul>
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/bash.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/stata.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://https-thebigdatascientists-com.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  
+  <p class="powered-by">
+      
+      
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef23e545d41b87c"></script>
+      
+      
+
+      <script type="text/javascript">
+      var addthis_config = {
+        data_ga_property: 'UA-45299226-1',
+        data_ga_social : true,
+        data_track_addressbar: true,
+        data_track_addressbar_paths: ['/201*/*/*/*/*']
+      };
+      var addthis_share = {
+        
+        url_transforms : {
+          shorten: {
+            twitter: 'bitly'
+          }
+        }, 
+        shorteners : {
+          bitly : {}
+        }
+      }
+      </script>
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+  </div>
+
+  <p class="powered-by">
+    © 2018-2021 Harry Trinh. All thoughts and opinions here are my own.  Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+  </div>
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

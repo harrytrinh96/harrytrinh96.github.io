@@ -1,0 +1,36 @@
+USE sql_practice_DB;
+
+DROP TABLE IF EXISTS `Person`;
+
+CREATE TABLE `Person`(
+  PersonId INT NOT NULL,
+  LastName VARCHAR(100),
+  FirstName VARCHAR(100),
+  PRIMARY KEY (PersonId)
+)ENGINE InnoDB CHARSET UTF8;
+
+DROP TABLE IF EXISTS `Address`;
+
+CREATE TABLE `Address`(
+  AddressId INT NOT NULL,
+  PersonId INT NOT NULL,
+  City VARCHAR(100),
+  State VARCHAR(100),
+  PRIMARY KEY (AddressId)
+)ENGINE InnoDB CHARSET UTF8;
+
+
+
+INSERT INTO `Person` VALUES (1, "Wang", "Allen");
+INSERT INTO `Address` VALUES (1, 2, "New York City", "New York");
+
+SELECT * FROM Person;
+
+SELECT * FROM Address;
+
+-- Write your MySQL query statement below
+SELECT FirstName, LastName, City, State
+FROM Person p
+LEFT JOIN Address a
+ON p.PersonId = a.PersonId;
+
