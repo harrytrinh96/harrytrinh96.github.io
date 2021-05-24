@@ -727,19 +727,19 @@
   <div class="article-container">
 
     <div class="article-style">
-    <p>Metric learning attempts to map data to an embedding space, where similar
+    <p><strong>Metric learning</strong> attempts to map data to an embedding space, where similar
     data are close together and dissimilar data are far apart. In general, this can
     be achieved by means of embedding and classification losses. Embedding losses
     operate on the relationships between samples in a batch, while classification
     losses include a weight matrix that transforms the embedding space into a vector
     of class logits</p>
-        <p>Embedding losses: Pair and triplet losses provide the foundation for two fundamental approaches to
+        <p><strong>Embedding losses:</strong> Pair and triplet losses provide the foundation for two fundamental approaches to
     metric learning. A classic pair based method is the contrastive loss, which
     attempts to make the distance between positive pairs (dp) smaller than some
     threshold (mpos), and the distance between negative pairs (dn) larger than some
     threshold (mneg):
     Lcontrastive = [dp − mpos]+ + [mneg − dn]+</p>
-        <p>Classification losses are based on the inclusion of a weight matrix, where each
+        <p><strong>Classification losses</strong> are based on the inclusion of a weight matrix, where each
     column corresponds to a particular class. In most cases, training consists of matrix multiplying the weights with embedding vectors to obtain logits, and then
     applying a loss function to the logits. The most straightforward case is the normalized softmax loss, which is identical to cross entropy, but with the columns of the weight matrix L2 normalized. ProxyNCA is a variation of
     this, where cross entropy is applied to the Euclidean distances, rather than the
@@ -750,7 +750,7 @@
     consistently left out face verification losses from their experiments, even though
     there is nothing face-specific about them.) The SoftTriple loss takes a different approach, by expanding the weight matrix to have multiple columns per
     class, theoretically providing more flexibility for modeling class variances</p>
-    <p>Pair and triplet mining: Mining is the process of finding the best pairs or triplets to train on. There are two broad approaches to mining: offline and online. Offline mining is performed
+    <p><strong>Pair and triplet mining:</strong> Mining is the process of finding the best pairs or triplets to train on. There are two broad approaches to mining: offline and online. Offline mining is performed
     before batch construction, so that each batch is made to contain the most informative samples. This might be accomplished by storing lists of hard negatives, doing a nearest neighbors search before each epoch, or before each iteration. In contrast, online mining finds hard pairs or triplets within each
     randomly sampled batch. Using all possible pairs or triplets is an alternative,
     but this has two weaknesses: practically, it can consume a lot of memory, and theoretically, it has the tendency to include a large number of easy negatives and
@@ -767,7 +767,7 @@
     loss for the complex models only considers the pairs that the simpler models
     find difficult. Recently, Wang et al. proposed a simple pair mining strategy,
     where negatives are chosen if they are closer to an anchor than its hardest positive, and positives are chosen if they are further from an anchor than its hardest negative.</p>
-    <p>Advanced training methods: To obtain higher accuracy, many recent papers have gone beyond loss functions
+    <p><strong>Advanced training methods:</strong> To obtain higher accuracy, many recent papers have gone beyond loss functions
     or mining techniques. For example, several recent methods incorporate generator networks in their training procedure. Lin et al. use a generator as part
     of their framework for modeling class centers and intraclass variance. Duan et
     al. use a hard-negative generator to expose the model to difficult negatives
