@@ -387,7 +387,7 @@ small,
 
 .form-control:focus {
   border-color: #00b6af;
-  box-shadow: 0 0 0 .2rem #FF6771;
+  box-shadow: 0 0 0 .2rem #000000;
 }
 
 /*************************************************
@@ -1728,7 +1728,7 @@ a.badge:hover {
 
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
-  background-color: #FF6771 !important;
+  background-color: #000000 !important;
 }
 
 .btn-toolbar .btn.btn-primary:active,
@@ -1739,7 +1739,7 @@ a.badge:hover {
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .2rem #FF6771;
+  box-shadow: 0 0 0 .2rem #000000;
 }
 
 /*************************************************
@@ -2036,7 +2036,7 @@ div.alert > div:first-child::before {
 div.alert-warning > div:first-child::before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  color: #ff3860;
+  color: #000000;
   content: '\f071';
 }
 
@@ -2055,7 +2055,7 @@ div.alert a {
 .alert-warning {
   color: #cd0930;
   background-color: #fff5f7;
-  border-color: #ff3860;
+  border-color: #000000;
 }
 
 /*************************************************
@@ -2106,7 +2106,7 @@ div.alert a {
 
 .docs-search .form-control:focus {
   border-color: #00b6af;
-  box-shadow: 0 0 0 3px #FF6771;
+  box-shadow: 0 0 0 3px #000000;
 }
 
 /* Docs sidebar. */
