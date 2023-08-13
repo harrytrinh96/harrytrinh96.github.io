@@ -123,14 +123,14 @@ h4, h5, h6 {
 
 a,
 h3.article-title a:hover {
-  color: #f7766c;
+  color: #000000;
   text-decoration: none;
   transition: color 0.6s ease;
 }
 
 a:hover,
 a:focus {
-  color: #f7766c;
+  color: #000000;
 }
 
 img,
@@ -386,7 +386,7 @@ small,
 }
 
 .form-control:focus {
-  border-color: #f7766c;
+  border-color: #000000;
   box-shadow: 0 0 0 .2rem #FF6771;
 }
 
@@ -702,7 +702,7 @@ a.hero-cta-alt:hover {
 .featurette-icon {
   display: block;
   width: 100%;
-  color: #f7766c;
+  color: #000000;
   font-size: 3rem;
   text-align: center;
 }
@@ -1042,7 +1042,7 @@ article .article-metadata {
 }
 
 .article-metadata a:hover {
-  color: #f7766c;
+  color: #000000;
 }
 
 .middot-divider {
@@ -1295,11 +1295,11 @@ article .article-metadata {
 
 .experience .m-2 .border,
 .experience .col.border-right {
-  border-color: #f7766c !important;
+  border-color: #000000 !important;
 }
 
 .experience .m-2 .border.exp-fill {
-  background-color: #f7766c !important;
+  background-color: #000000 !important;
 }
 
 /*************************************************
@@ -1661,13 +1661,13 @@ a.badge:hover {
  **************************************************/
 
 .btn-primary {
-  border-color: #f7766c;
-  background: #f7766c;
+  border-color: #000000;
+  background: #000000;
 }
 
 .btn-outline-primary {
-  border-color: #f7766c;
-  color: #f7766c;
+  border-color: #000000;
+  color: #000000;
 }
 
 .btn-primary:hover,
@@ -1675,7 +1675,7 @@ a.badge:hover {
 .btn-primary.active,
 .btn-primary:visited,
 .open > .dropdown-toggle.btn-primary {
-  background: #f7766c;
+  background: #000000;
 }
 
 .btn-outline-light:hover,
@@ -1688,8 +1688,8 @@ a.badge:hover {
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: #f7766c;
-  border-color: #f7766c;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .dark .btn-outline-primary:not(:disabled):not(.disabled).active,
@@ -1700,8 +1700,8 @@ a.badge:hover {
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #f7766c;
-  border-color: #f7766c;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 .dark .btn-outline-primary:hover {
@@ -1789,14 +1789,14 @@ nav#navbar-main li.nav-item {
 }
 
 .navbar-light .navbar-nav>.nav-item>.nav-link:hover {
-  color: #f7766c;
+  color: #000000;
   background-color: transparent;
 }
 
 .navbar-light .navbar-nav>li.nav-item>a.active,
 .navbar-light .navbar-nav>li.nav-item>a.active:focus,
 .navbar-light .navbar-nav>li.nav-item>a.active:hover {
-  color: #f7766c;
+  color: #000000;
   font-weight: 700;
   background-color: transparent !important; /* Override Bootstrap. */
 }
@@ -1833,7 +1833,7 @@ nav#navbar-main li.nav-item {
 
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
-  color: #f7766c;
+  color: #000000;
   text-decoration: none;
   background-color: #bfcad1;
 }
@@ -1843,7 +1843,7 @@ nav#navbar-main li.nav-item {
 .dropdown-menu > .active:hover {
   color: #bfcad1;
   text-decoration: none;
-  background-color: #f7766c;
+  background-color: #000000;
   outline: 0;
 }
 
@@ -1933,7 +1933,7 @@ nav#navbar-main li.nav-item {
   .navbar-light .navbar-nav .open .dropdown-menu >.nav-item> .active,
   .navbar-light .navbar-nav .open .dropdown-menu >.nav-item> .active:focus,
   .navbar-light .navbar-nav .open .dropdown-menu >.nav-item> .active:hover {
-    color: #f7766c;
+    color: #000000;
     background-color: transparent;
   }
 
@@ -2105,7 +2105,7 @@ div.alert a {
 }
 
 .docs-search .form-control:focus {
-  border-color: #f7766c;
+  border-color: #000000;
   box-shadow: 0 0 0 3px #FF6771;
 }
 
@@ -2171,7 +2171,7 @@ div.alert a {
 .docs-sidebar .nav>.active:hover>a,
 .docs-sidebar .nav>.active>a {
   font-weight: bold;
-  color: #f7766c;
+  color: #000000;
   background-color: transparent;
 }
 
@@ -2180,7 +2180,7 @@ div.alert a {
 .docs-toggle {
   line-height: 1;
   font-size: 1.2rem;
-  color: #f7766c;
+  color: #000000;
   background-color: transparent;
 }
 
@@ -2297,7 +2297,7 @@ ul.toc-top {
 
 #TableOfContents li a:hover,
 .toc-top li a:hover {
-  color: #f7766c;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -2310,7 +2310,7 @@ ul.toc-top {
 }
 
 .anchorjs-link:hover {
-  color: #f7766c;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -2335,7 +2335,7 @@ body.dark,
 
 .dark .form-control:focus {
   background-color: rgb(68, 71, 90);
-  border-color: #f7766c;
+  border-color: #000000;
   box-shadow: 0 0 0 .2rem #DA2536;
 }
 
@@ -2368,7 +2368,7 @@ body.dark,
 }
 
 .dark ul.share li a {
-  background-color: #f7766c;
+  background-color: #000000;
 }
 
 .dark table table {
@@ -2421,7 +2421,7 @@ body.dark,
 }
 
 .dark .card h4 a {
-  color: #f7766c;
+  color: #000000;
   border-bottom: solid 1px transparent;
 }
 
