@@ -387,7 +387,7 @@ small,
 
 .form-control:focus {
   border-color: #000000;
-  box-shadow: 0 0 0 .2rem #FF6771;
+  box-shadow: 0 0 0 .2rem #000000;
 }
 
 /*************************************************
@@ -642,7 +642,7 @@ a[data-fancybox] img {
 }
 
 .wg-hero.dark .btn {
-  color: #DA2536;
+  color: #000000;
 }
 
 a.hero-cta-alt {
@@ -1624,14 +1624,14 @@ a.badge:hover {
 .tag-cloud a:active,
 .tag-cloud a:focus,
 .tag-cloud a:hover {
-  color: #DA2536;
+  color: #000000;
   transform: scale(1.2);
 }
 
 .dark .tag-cloud a:active,
 .dark .tag-cloud a:focus,
 .dark .tag-cloud a:hover {
-  color: #FF6771;
+  color: #000000;
 }
 
 /*************************************************
@@ -1728,18 +1728,18 @@ a.badge:hover {
 
 .btn-toolbar .btn.btn-primary:hover,
 .btn-toolbar .btn.btn-primary:focus {
-  background-color: #FF6771 !important;
+  background-color: #000000 !important;
 }
 
 .btn-toolbar .btn.btn-primary:active,
 .btn-toolbar .btn.btn-primary.active {
-  background-color: #DA2536 !important;
+  background-color: #000000 !important;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .2rem #FF6771;
+  box-shadow: 0 0 0 .2rem #000000;
 }
 
 /*************************************************
@@ -2106,7 +2106,7 @@ div.alert a {
 
 .docs-search .form-control:focus {
   border-color: #000000;
-  box-shadow: 0 0 0 3px #FF6771;
+  box-shadow: 0 0 0 3px #000000;
 }
 
 /* Docs sidebar. */
@@ -2305,7 +2305,7 @@ ul.toc-top {
 
 .anchorjs-link {
   font-weight: 400;
-  color: #DA2536;
+  color: #000000;
   transition: color .16s linear;
 }
 
@@ -2336,7 +2336,7 @@ body.dark,
 .dark .form-control:focus {
   background-color: rgb(68, 71, 90);
   border-color: #000000;
-  box-shadow: 0 0 0 .2rem #DA2536;
+  box-shadow: 0 0 0 .2rem #000000;
 }
 
 .dark h1,
