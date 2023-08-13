@@ -1858,12 +1858,12 @@ nav#navbar-main li.nav-item {
 .navbar-light .navbar-brand {
   font-weight: bold;
   font-size: 1.2em;
-  color: #eb1f4b;
+  color: #000000;
 }
 
 .navbar-light .navbar-brand:focus,
 .navbar-light .navbar-brand:hover {
-  color: #eb1f4b;
+  color: #000000;
   background-color: transparent;
 }
 
