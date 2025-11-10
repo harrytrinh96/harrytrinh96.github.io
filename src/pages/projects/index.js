@@ -31,7 +31,7 @@ export const Projects = () => {
 
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container id="projects" className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
           <title> Projects | {meta.title} </title>

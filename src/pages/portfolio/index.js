@@ -9,7 +9,7 @@ import React from "react";
 export const Portfolio = () => {
   return (
     <HelmetProvider>
-      <Container className="About-header">
+      <Container id="publications" className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
           <title> Publications | {meta.title} </title>

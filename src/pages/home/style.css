@@ -3,6 +3,24 @@
   display: flex;
   align-items: center;
   padding: 2rem;
+  position: relative;
+}
+
+.home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  background-image: var(--cover-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.98;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 100%);
 }
 
 .intro_sec {
@@ -10,6 +28,7 @@
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
+  z-index: 1;
 }
 
 .intro {
@@ -17,33 +36,35 @@
 }
 
 .profile-img {
-  width: 400px;
+  width: 140px;
+  height: 140px;
   max-width: 100%;
-  height: auto;
   border-radius: 50%;
-  margin-bottom: 2rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-  border: 4px solid var(--primary-color);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid var(--primary-color);
+  object-fit: cover;
+  object-position: center;
 }
 
 .intro h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--text-color);
 }
 
 .fluidz-48 {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: var(--primary-color);
-  min-height: 60px;
-  margin-bottom: 2rem;
+  min-height: 40px;
+  margin-bottom: 1.5rem;
 }
 
 .intro p {
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.7;
   color: var(--text-secondary);
 }
 
@@ -128,6 +149,53 @@
   }
 }
 
+/* Contact Section */
+.contact-section {
+  padding: 5rem 2rem;
+  background: var(--bg-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.contact-info strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.contact-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .home {
     padding: 1rem;
@@ -151,6 +219,18 @@
 
   .intro_btn-action {
     flex-direction: column;
+  }
+
+  .contact-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
   }
 }
 

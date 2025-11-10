@@ -47,12 +47,13 @@
 
 /* Button styles */
 .ac_btn {
-  padding: 12px 28px;
+  padding: 10px 24px;
   border-radius: 50px;
   border: 2px solid var(--primary-color);
   background: transparent;
   color: var(--primary-color);
   font-weight: 500;
+  font-size: 0.95rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;

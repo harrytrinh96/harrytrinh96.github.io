@@ -6,6 +6,7 @@ import { Projects } from "../pages/projects";
 import { ContactUs } from "../pages/contact";
 import { About } from "../pages/about";
 import { Socialicons } from "../components/socialicons";
+import { ScrollSpyNav } from "../components/scrollspy";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 function AnimatedRoutes() {
@@ -36,8 +37,12 @@ function AnimatedRoutes() {
 }
 
 function AppRoutes() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+  
   return (
     <div className="s_c">
+      {isHomePage && <ScrollSpyNav />}
       <AnimatedRoutes />
       <Socialicons />
     </div>

@@ -9,11 +9,13 @@ import { Projects } from "../projects";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import avatarImage from "../../avt.png";
+import coverImage from "../../cover.jpg";
+import { contactConfig } from "../../content_option";
 
 export const Home = () => {
   return (
     <HelmetProvider>
-      <section id="home" className="home">
+      <section id="home" className="home" style={{'--cover-image': `url(${coverImage})`}}>
         <Helmet>
           <meta charSet="utf-8" />
           <title> {meta.title}</title>
@@ -24,7 +26,7 @@ export const Home = () => {
             <div className="align-self-center ">
               <br/><br/>
               <div className="intro mx-auto">
-                <img width="400px" className="profile-img" alt="Harry Trinh" src={avatarImage} />
+                <img width="140px" className="profile-img" alt="Harry Trinh" src={avatarImage} />
                 <h2 className="mb-1x">{introdata.title}</h2>
                 
                 <h6 className="fluidz-48 mb-1x">
@@ -81,6 +83,29 @@ export const Home = () => {
       </section>
       <Portfolio/>
       <Projects/>
+      <section id="contact" className="contact-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-8 mx-auto text-center">
+              <h3 className="section-title">Get in Touch</h3>
+              <p className="contact-text">
+                {contactConfig.description}
+              </p>
+              <div className="contact-info">
+                <p>
+                  <strong>Email:</strong>{" "}
+                  <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
+                    {contactConfig.YOUR_EMAIL}
+                  </a>
+                </p>
+                <p>
+                  <strong>Location:</strong> Oslo, Norway
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </HelmetProvider>
   );
 };
