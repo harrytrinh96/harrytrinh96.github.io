@@ -8,6 +8,7 @@ import { Portfolio } from "../portfolio";
 import { Projects } from "../projects";
 import React from "react";
 import Typewriter from "typewriter-effect";
+import avatarImage from "../../assets/images/avatar.jpg";
 
 export const Home = () => {
   return (
@@ -23,6 +24,7 @@ export const Home = () => {
             <div className="align-self-center ">
               <br/><br/>
               <div className="intro mx-auto">
+                <img width="400px" className="profile-img" alt="Harry Trinh" src={avatarImage} />
                 <h2 className="mb-1x">{introdata.title}</h2>
                 
                 <h6 className="fluidz-48 mb-1x">

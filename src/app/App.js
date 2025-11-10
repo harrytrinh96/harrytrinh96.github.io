@@ -26,12 +26,12 @@ export default function App() {
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
         <AnimatedCursor
-          innerSize={15}
-          outerSize={15}
-          color="#f7766c"
-          outerAlpha={0.4}
+          innerSize={8}
+          outerSize={35}
+          color="247, 118, 108"
+          outerAlpha={0.3}
           innerScale={0.7}
-          outerScale={5}
+          outerScale={3}
         />
       </div>
       <ScrollToTop>
