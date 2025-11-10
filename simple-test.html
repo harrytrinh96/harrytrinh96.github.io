@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Simple React Test</title>
+</head>
+<body>
+    <h1>Testing if React works...</h1>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script>
+        const { createElement } = React;
+        const { createRoot } = ReactDOM;
+        
+        const root = createRoot(document.getElementById('root'));
+        root.render(createElement('h2', null, '✅ React is working!'));
+        
+        console.log('✅ React test completed');
+    </script>
+</body>
+</html>
+
