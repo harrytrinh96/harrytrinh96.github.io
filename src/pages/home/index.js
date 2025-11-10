@@ -8,7 +8,7 @@ import { Portfolio } from "../portfolio";
 import { Projects } from "../projects";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import avatarImage from "../avt.png";
+import avatarImage from "../../avt.png";
 
 export const Home = () => {
   return (
