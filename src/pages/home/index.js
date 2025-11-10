@@ -8,7 +8,7 @@ import { Portfolio } from "../portfolio";
 import { Projects } from "../projects";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import avatarImage from "../../avt.png";
+import avatarImage from "../../IMG_5002.jpg";
 import coverImage from "../../cover.jpg";
 import { contactConfig } from "../../content_option";
 
