@@ -1,0 +1,142 @@
+.site__header {
+  padding: 1.5rem 3rem;
+  background: var(--bg-color);
+  box-shadow: var(--shadow);
+  z-index: 998;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color) !important;
+}
+
+.menu__button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu__button:hover {
+  color: var(--primary-color);
+}
+
+.nav_ac {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.nav_ac:hover {
+  color: var(--primary-color);
+}
+
+/* Menu overlay */
+.site__navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 997;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.site__navigation.menu__opend {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.bg__menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+}
+
+.menu__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.menu__container {
+  text-align: center;
+}
+
+.the_menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu_item {
+  margin: 2rem 0;
+}
+
+.menu_item a {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.menu_item a:hover {
+  color: var(--primary-color);
+}
+
+.menu_footer {
+  bottom: 0;
+  padding: 2rem 3rem;
+}
+
+.menu_footer a {
+  color: var(--text-color);
+  margin: 0 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu_footer a:hover {
+  color: var(--primary-color);
+}
+
+.copyright {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .site__header {
+    padding: 1rem 1.5rem;
+  }
+
+  .menu_item a {
+    font-size: 1.5rem;
+  }
+
+  .menu_footer {
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .menu_footer .d-flex {
+    margin-bottom: 1rem;
+  }
+}
+

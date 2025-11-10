@@ -1,0 +1,118 @@
+.About-header {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+}
+
+.display-4 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.t_border {
+  border-top: 3px solid var(--primary-color);
+  width: 100px;
+}
+
+.sec_sp {
+  margin-bottom: 4rem;
+}
+
+.color_sec {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.service_ {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.service__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.service_desc {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.table {
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.table th {
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 1rem 0.5rem;
+}
+
+.table td {
+  color: var(--text-secondary);
+  padding: 1rem 0.5rem;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Skills progress bars */
+.skill-item {
+  margin-bottom: 2rem;
+}
+
+.progress-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.8rem;
+}
+
+.progress {
+  height: 30px;
+  background-color: var(--border-color);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--primary-dark));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  transition: width 1s ease-in-out;
+  position: relative;
+}
+
+.progress-value {
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .About-header {
+    padding: 2rem 1rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .sec_sp {
+    margin-bottom: 2rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.8rem 0.3rem;
+    font-size: 0.9rem;
+  }
+}
+

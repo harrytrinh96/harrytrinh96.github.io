@@ -1,0 +1,16 @@
+.nav_ac {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav_ac svg {
+  font-size: 1.8rem;
+}
+
+.nav_ac:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
