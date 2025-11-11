@@ -121,6 +121,32 @@ const researchexperience = [
 ];
 
 // Publications data - extracted from current website
+const timelinedata = [
+  {
+    id: "october2025oslo",
+    date: "October 2025",
+    location: "Oslo, Norway",
+    title: "Google Cloud Day 2025",
+    description: "It was very great to join Google Cloud Day 2025 event in Oslo! It was fun to start with hands-on building Google agents and then at the end joining a founder track to hear founders' stories, such as Dune Analytics founder Mats.",
+    photos: [
+      require("./timelines/october2025oslo/564616711_1509173870218590_5398157079929565326_n.jpg"),
+      require("./timelines/october2025oslo/565094112_1509173733551937_6836460909389936782_n.jpg"),
+    ],
+  },
+  {
+    id: "september2025london",
+    date: "September 2025",
+    location: "London, UK",
+    title: "AI & YOLO Conference",
+    description: "It was fantastic to meet Ultralytics founder - Glen! I had a very informative chat with him during break time sessions. The event was packed with lots of news from LLMs and the new YOLO26 version releasing soon.",
+    photos: [
+      require("./timelines/september2025london/555059576_1493379268464717_7853894031367767741_n.jpg"),
+      require("./timelines/september2025london/555603654_1493379471798030_5804013426906808943_n.jpg"),
+      require("./timelines/september2025london/555906408_1493379405131370_2792259623500642386_n.jpg"),
+    ],
+  },
+];
+
 const dataportfolio = [
     {
         img: "redos",
@@ -275,6 +301,7 @@ export {
     meta,
     dataabout,
     dataportfolio,
+    timelinedata,
     researchexperience,
     workexperience,
     worktimeline,

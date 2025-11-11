@@ -6,6 +6,7 @@ import { introdata, meta } from "../../content_option";
 import { Link } from "react-router-dom";
 import { Portfolio } from "../portfolio";
 import { Projects } from "../projects";
+import { Timeline } from "../timeline";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import avatarImage from "../../IMG_5002.jpg";
@@ -81,6 +82,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
+      <Timeline/>
       <Portfolio/>
       <Projects/>
       <section id="contact" className="contact-section">

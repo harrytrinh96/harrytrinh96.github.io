@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
-import { FaHome, FaBook, FaFolder, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaBook, FaFolder, FaEnvelope, FaClock } from "react-icons/fa";
 
 export const ScrollSpyNav = () => {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "publications", "projects", "contact"];
+      const sections = ["home", "timeline", "publications", "projects", "contact"];
       const scrollPosition = window.scrollY + 200;
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
@@ -48,6 +48,7 @@ export const ScrollSpyNav = () => {
 
   const navItems = [
     { id: "home", icon: <FaHome />, label: "Home" },
+    { id: "timeline", icon: <FaClock />, label: "Timeline" },
     { id: "publications", icon: <FaBook />, label: "Publications" },
     { id: "projects", icon: <FaFolder />, label: "Projects" },
     { id: "contact", icon: <FaEnvelope />, label: "Contact" },
