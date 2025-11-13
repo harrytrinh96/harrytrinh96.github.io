@@ -95,9 +95,7 @@ export const Timeline = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="sec_sp">
-          <h3 className="color_sec py-4">🌍 Event Timeline</h3>
-          <p className="mb-5">Memorable moments from conferences and tech events around the world</p>
-          
+          <h3 className="color_sec py-4">🌍 Notable Events</h3>          
           <div className="timeline-container">
             <div 
               className="timeline-line" 

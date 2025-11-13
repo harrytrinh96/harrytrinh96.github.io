@@ -145,6 +145,16 @@ const timelinedata = [
       require("./timelines/september2025london/555906408_1493379405131370_2792259623500642386_n.jpg"),
     ],
   },
+  {
+    id: "june2025halden",
+    date: "June 2025",
+    location: "Halden, Norway",
+    title: "Team Building Event",
+    description: "Great to be in Halden for team building with lots of challenges! An amazing opportunity to bond with the team and push ourselves beyond our limits.",
+    photos: [
+      require("./timelines/june2025halden/IMG_1742 2.JPG"),
+    ],
+  },
 ];
 
 const dataportfolio = [
